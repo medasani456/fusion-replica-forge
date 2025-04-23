@@ -27,52 +27,49 @@ const Header = () => {
   };
 
   return (
-    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'}`}>
+    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-fusion-dark/90 shadow-md py-3' : 'bg-fusion-dark/70 py-5'}`}>
       <div className="container-custom flex items-center justify-between">
         <div className="flex items-center gap-2">
-          {/* Logo */}
           <a href="/" className="flex items-center">
             <span className="text-2xl font-bold text-fusion-primary">Inno</span>
-            <span className="text-2xl font-bold text-fusion-dark">Fusion</span>
+            <span className="text-2xl font-bold text-white">Fusion</span>
           </a>
         </div>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center space-x-8">
+        <nav className="hidden lg:flex items-center space-x-8 text-white">
           <div className="relative group">
-            <a href="#solutions" className="nav-link flex items-center">
+            <a href="#solutions" className="nav-link flex items-center text-white hover:text-fusion-primary">
               Solutions <ChevronDown className="ml-1 w-4 h-4" />
             </a>
-            <div className="absolute left-0 top-full mt-2 w-48 bg-white shadow-lg rounded-md overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-              <a href="#procurement" className="block px-4 py-2 hover:bg-gray-100">Procurement</a>
-              <a href="#supply-chain" className="block px-4 py-2 hover:bg-gray-100">Supply Chain</a>
-              <a href="#manufacturing" className="block px-4 py-2 hover:bg-gray-100">Manufacturing</a>
-              <a href="#sustainability" className="block px-4 py-2 hover:bg-gray-100">Sustainability</a>
+            <div className="absolute left-0 top-full mt-2 w-48 bg-fusion-light shadow-lg rounded-md overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+              <a href="#procurement" className="block px-4 py-2 hover:bg-fusion-dark text-white">Procurement</a>
+              <a href="#supply-chain" className="block px-4 py-2 hover:bg-fusion-dark text-white">Supply Chain</a>
+              <a href="#manufacturing" className="block px-4 py-2 hover:bg-fusion-dark text-white">Manufacturing</a>
+              <a href="#sustainability" className="block px-4 py-2 hover:bg-fusion-dark text-white">Sustainability</a>
             </div>
           </div>
-          <a href="#expertise" className="nav-link">Expertise</a>
+          <a href="#expertise" className="nav-link text-white hover:text-fusion-primary">Expertise</a>
           <div className="relative group">
-            <a href="#industries" className="nav-link flex items-center">
+            <a href="#industries" className="nav-link flex items-center text-white hover:text-fusion-primary">
               Industries <ChevronDown className="ml-1 w-4 h-4" />
             </a>
-            <div className="absolute left-0 top-full mt-2 w-48 bg-white shadow-lg rounded-md overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-              <a href="#healthcare" className="block px-4 py-2 hover:bg-gray-100">Healthcare</a>
-              <a href="#retail" className="block px-4 py-2 hover:bg-gray-100">Retail</a>
-              <a href="#manufacturing" className="block px-4 py-2 hover:bg-gray-100">Manufacturing</a>
-              <a href="#automotive" className="block px-4 py-2 hover:bg-gray-100">Automotive</a>
+            <div className="absolute left-0 top-full mt-2 w-48 bg-fusion-light shadow-lg rounded-md overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+              <a href="#healthcare" className="block px-4 py-2 hover:bg-fusion-dark text-white">Healthcare</a>
+              <a href="#retail" className="block px-4 py-2 hover:bg-fusion-dark text-white">Retail</a>
+              <a href="#manufacturing" className="block px-4 py-2 hover:bg-fusion-dark text-white">Manufacturing</a>
+              <a href="#automotive" className="block px-4 py-2 hover:bg-fusion-dark text-white">Automotive</a>
             </div>
           </div>
-          <a href="#resources" className="nav-link">Resources</a>
-          <a href="#about-us" className="nav-link">About Us</a>
+          <a href="#resources" className="nav-link text-white hover:text-fusion-primary">Resources</a>
+          <a href="#about-us" className="nav-link text-white hover:text-fusion-primary">About Us</a>
         </nav>
         
         <div className="hidden lg:block">
-          <Button className="button-primary">Contact Us</Button>
+          <Button className="bg-fusion-primary text-fusion-dark hover:bg-fusion-secondary">Contact Us</Button>
         </div>
 
-        {/* Mobile menu button */}
         <button
-          className="lg:hidden text-fusion-dark p-2"
+          className="lg:hidden text-white p-2"
           onClick={toggleMobileMenu}
           aria-label="Toggle menu"
         >
@@ -104,15 +101,15 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden bg-white shadow-lg">
+        <div className="lg:hidden bg-fusion-dark shadow-lg">
           <div className="container-custom py-4">
             <nav className="flex flex-col space-y-4">
-              <a href="#solutions" className="nav-link font-medium">Solutions</a>
-              <a href="#expertise" className="nav-link font-medium">Expertise</a>
-              <a href="#industries" className="nav-link font-medium">Industries</a>
-              <a href="#resources" className="nav-link font-medium">Resources</a>
-              <a href="#about-us" className="nav-link font-medium">About Us</a>
-              <Button className="button-primary w-full">Contact Us</Button>
+              <a href="#solutions" className="nav-link font-medium text-white hover:text-fusion-primary">Solutions</a>
+              <a href="#expertise" className="nav-link font-medium text-white hover:text-fusion-primary">Expertise</a>
+              <a href="#industries" className="nav-link font-medium text-white hover:text-fusion-primary">Industries</a>
+              <a href="#resources" className="nav-link font-medium text-white hover:text-fusion-primary">Resources</a>
+              <a href="#about-us" className="nav-link font-medium text-white hover:text-fusion-primary">About Us</a>
+              <Button className="bg-fusion-primary text-fusion-dark hover:bg-fusion-secondary w-full">Contact Us</Button>
             </nav>
           </div>
         </div>
