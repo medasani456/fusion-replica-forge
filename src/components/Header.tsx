@@ -32,8 +32,8 @@ const Header = () => {
         <div className="flex items-center gap-2">
           {/* Logo */}
           <a href="/" className="flex items-center">
-            <span className="text-2xl font-bold text-fusion-primary">Fusion</span>
-            <span className="text-2xl font-bold text-fusion-dark">Sourcing</span>
+            <span className="text-2xl font-bold text-fusion-primary">Inno</span>
+            <span className="text-2xl font-bold text-fusion-dark">Fusion</span>
           </a>
         </div>
 
@@ -122,3 +122,4 @@ const Header = () => {
 };
 
 export default Header;
+

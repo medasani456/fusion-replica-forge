@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Footer = () => {
@@ -9,8 +8,8 @@ const Footer = () => {
           <div>
             <div className="mb-6">
               <a href="/" className="flex items-center">
-                <span className="text-2xl font-bold text-fusion-secondary">Fusion</span>
-                <span className="text-2xl font-bold text-white">Sourcing</span>
+                <span className="text-2xl font-bold text-fusion-secondary">Inno</span>
+                <span className="text-2xl font-bold text-white">Fusion</span>
               </a>
             </div>
             <p className="text-gray-400 mb-6">
@@ -101,7 +100,7 @@ const Footer = () => {
         <div className="container-custom py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              &copy; {new Date().getFullYear()} Fusion Sourcing. All rights reserved.
+              &copy; {new Date().getFullYear()} InnoFusion. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">Privacy Policy</a>
